@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود به اگزاپینگ</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+
+    <!-- start navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="asetss/media/images/exalogo2.png" alt="اگزاپینگ" class="nav-logo-img">
+                <span class="nav-brand">سرویس اکسترا</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">صفحه اصلی</a></li>
+                <li><a href="#">آموزش</a></li>
+                <li><a href="#">قیمت</a></li>
+                <li><a href="#">قوانین</a></li>
+            </ul>
+            <div class="nav-user">
+                <a href="#" class="user-btn">ناحیه کاربری</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start login container -->
+    <div class="login-container">
+
+
+        <h2>ورود به اگزاپینگ</h2>
+
+        <p id="error-message" class="error-msg">رمز عبور یا نام کاربری اشتباه است</p>
+
+        <form id="login-form">
+            <!-- start input group -->
+            <div class="input-group">
+                <input type="text" id="username" placeholder="نام کاربری" required>
+            </div>
+            <!-- end input group -->
+
+            <!-- start input group password -->
+            <div class="input-group password-group">
+                <input type="password" id="password" placeholder="رمز عبور" required>
+                <i class='bx bx-show' id="toggle-password"></i>
+            </div>
+            <!-- end input group password -->
+
+            <!-- start forgot password -->
+            <div class="forgot-password">
+                <a href="#">رمز عبور تو فراموش کردی؟</a>
+            </div>
+            <!-- end forgot password -->
+
+            <!-- start checkbox -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="stay-signed-in">
+                <label for="stay-signed-in">مرا به خاطر بسپار</label>
+            </div>
+            <!-- end checkbox -->
+
+            <!-- start submit button -->
+            <div class="submit-container">
+                <button type="submit" id="submit-btn">
+                    ورود
+                </button>
+            </div>
+            <!-- end submit button -->
+        </form>
+
+        <!-- start bottom links -->
+        <div class="bottom-links">
+            <a href="#">ثبت نام</a>
+            <span class="divider">|</span>
+            <a href="#">بازگشت به صفحه اصلی</a>
+        </div>
+        <!-- end bottom links -->
+
+    </div>
+    <!-- end login container -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

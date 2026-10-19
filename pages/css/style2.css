@@ -1,0 +1,416 @@
+/* start reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vazirmatn", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* end reset */
+
+/* start body */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f2f5;
+  position: relative;
+  overflow: hidden;
+}
+/* end body */
+
+/* start navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 30px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.nav-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo-img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-brand {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #d13639;
+}
+
+.nav-user .user-btn {
+  text-decoration: none;
+  color: #fff;
+  background: #d13639;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-user .user-btn:hover {
+  background: #b82e31;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+}
+/* end navbar */
+
+/* start login container */
+.login-container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 380px;
+  padding: 40px 35px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  z-index: 20;
+  position: relative;
+  border: 1px solid #e8e8e8;
+}
+/* end login container */
+
+/* start logo */
+.logo-container {
+  margin-bottom: 10px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+/* end logo */
+
+/* start heading */
+.login-container h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+/* end heading */
+
+/* start error message */
+.error-msg {
+  color: #d13639;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  padding: 6px 10px;
+  background: rgba(209, 54, 57, 0.06);
+  border-radius: 6px;
+  display: none;
+  text-align: center;
+}
+/* end error message */
+
+/* start input group */
+.input-group {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 13px 16px;
+  border: 2px solid #e0e0e0;
+  background: #fafafa;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.input-group input:focus {
+  background: #ffffff;
+  border-color: #d13639;
+}
+/* end input group */
+
+/* start password group */
+.password-group {
+  position: relative;
+}
+
+.password-group i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.password-group i:hover {
+  color: #333;
+}
+/* end password group */
+
+/* start forgot password */
+.forgot-password {
+  text-align: left;
+  margin: 4px 0 16px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: #888;
+  font-size: 12px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+  color: #d13639;
+}
+/* end forgot password */
+
+/* start checkbox */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 22px;
+  gap: 8px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #d13639;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.checkbox-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  user-select: none;
+}
+/* end checkbox */
+
+/* start submit button */
+.submit-container {
+  margin-bottom: 20px;
+}
+
+#submit-btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  background: #d13639;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#submit-btn:hover {
+  background: #b82e31;
+}
+
+#submit-btn:active {
+  transform: scale(0.98);
+}
+
+#submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+/* end submit button */
+
+/* start bottom links */
+.bottom-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.bottom-links a {
+  text-decoration: none;
+  color: #888;
+  font-size: 12px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.bottom-links a:hover {
+  color: #d13639;
+}
+
+.bottom-links .divider {
+  color: #ddd;
+  font-weight: 300;
+}
+/* end bottom links */
+
+/* start responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 16px;
+    height: 58px;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    padding: 16px 20px;
+    gap: 12px;
+    border-bottom: 1px solid #e8e8e8;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-brand {
+    font-size: 14px;
+  }
+
+  .nav-user .user-btn {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+
+  .login-container {
+    width: 92%;
+    max-width: 340px;
+    padding: 30px 20px 22px;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+
+  .logo {
+    height: 42px;
+  }
+
+  .login-container h2 {
+    font-size: 18px;
+  }
+
+  .input-group input {
+    padding: 12px 14px;
+    font-size: 13px;
+    border-radius: 6px;
+  }
+
+  #submit-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .bottom-links a {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 400px) {
+  .login-container {
+    padding: 24px 16px 18px;
+  }
+
+  .logo {
+    height: 36px;
+  }
+
+  .login-container h2 {
+    font-size: 16px;
+  }
+
+  .input-group input {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  #submit-btn {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .bottom-links {
+    gap: 6px;
+  }
+
+  .bottom-links a {
+    font-size: 10px;
+  }
+}
+/* end responsive */

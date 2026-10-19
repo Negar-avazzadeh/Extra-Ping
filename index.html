@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/nouislider@15.8.1/dist/nouislider.min.css"
+    />
+    <title>Extra</title>
+  </head>
+  <body>
+    <!-- start nav -->
+    <nav>
+      <div class="right-nav">
+        <h1>سرویس اکسترا</h1>
+      </div>
+      <div class="left-nav">
+        <ul>
+          <li><a href="pages/panel.html" class="panel">پنل کاربری</a></li>
+          <li><a href="#">صفحه اصلی</a></li>
+          <li><a href="#">آموزش</a></li>
+          <li><a href="#">قیمت</a></li>
+          <li><a href="#">قوانین</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end nav -->
+    <!-- start banner section -->
+    <section class="hero">
+      <div class="overlay-box">
+        <h1>سرویس کاهش پینگ اکسترا</h1>
+
+        <p>
+          کاهش پینگ و رفع تحریم‌های اعمال شده از سوی بازی‌های آنلاین را با سرویس
+          اکسترا تجربه کن!
+        </p>
+
+        <a href="#" class="btn">همین الان میتونی اقدام به خرید کنی!</a>
+      </div>
+
+      <div class="wave">
+        <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+          <path
+            fill="#fff"
+            d="M0,128L80,144C160,160,320,192,480,181.3C640,171,800,117,960,101.3C1120,85,1280,107,1360,117.3L1440,128L1440,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!-- end banner section -->
+    <!-- start roadmap -->
+    <section class="roadmap">
+      <div class="title">
+        <h2>نقشه راه استفاده از اکسترا</h2>
+        <span></span>
+      </div>
+
+      <div class="timeline">
+        <div class="card right">
+          <span class="badge">قدم اول</span>
+
+          <div class="content">
+            <p>
+              توی قدم اول ببین که تعرفه مارو می پسندی یا نه! برای همین از قسمت
+              محاسبه قیمت ببین که بسته مورد نظرت چه قیمتی داره! و بعد از اینکه
+              تصمیمتو گرفتی باید تو سایت ثبت نام , یا توی اکانتت وارد بشی.
+            </p>
+          </div>
+        </div>
+
+        <div class="card left">
+          <span class="badge">قدم دوم</span>
+
+          <div class="content">
+            <p>
+              توی قدم دوم از ناحیه کاربری یکبار دیگه بسته مورد نظرت رو شخصی سازی
+              کن و بعد از اینکه از همه چی مطمئن بودی روی دکمه خرید کلیک کن.
+            </p>
+          </div>
+        </div>
+
+        <div class="card right">
+          <span class="badge">قدم سوم</span>
+
+          <div class="content">
+            <p>
+              توی قدم سوم بعد از اینکه سرویس مورد نظرتو خریدی , اگر بلد نیستی
+              چجوری ازش استفاده کنی حتما از قسمت اموزش ها , آموزش مربوط به
+              پلتفرمی که میخوایی رو ببین. یادت نره اگه یک وقت سوالی داشتی یا توی
+              استفاده از سرویس ما به مشکلی برخوردی حتما اونو از طریق راه های
+              ارتباطی که در اختیارت گذاشتیم با ما به اشتراک بذار!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end roadmap -->
+    <!-- start price -->
+    <section class="pricing">
+      <div class="calculator">
+        <h2>محاسبه قیمت سرویس</h2>
+
+        <div class="slider-item">
+          <label>مقدار روز</label>
+
+          <div class="slider-wrapper">
+            <div class="slider-min">1</div>
+
+            <div class="slider-track" id="dayTrack">
+              <div class="slider-progress" id="dayProgress"></div>
+
+              <div class="slider-thumb" id="dayThumb">
+                <div class="slider-value" id="dayValue">1</div>
+              </div>
+            </div>
+
+            <div class="slider-max">60</div>
+          </div>
+
+          <div class="price-row">
+            <span>محاسبه قیمت روز :</span>
+
+            <strong id="dayPrice">1,000</strong>
+
+            <span>تومان</span>
+          </div>
+        </div>
+
+        <div class="slider-item">
+          <label>مقدار حجم</label>
+
+          <div class="slider-wrapper">
+            <div class="slider-min">1</div>
+
+            <div class="slider-track" id="volumeTrack">
+              <div class="slider-progress" id="volumeProgress"></div>
+
+              <div class="slider-thumb" id="volumeThumb">
+                <div class="slider-value" id="volumeValue">1</div>
+              </div>
+            </div>
+
+            <div class="slider-max">200</div>
+          </div>
+
+          <div class="price-row">
+            <span>محاسبه قیمت حجم :</span>
+
+            <strong id="volumePrice">4,000</strong>
+
+            <span>تومان</span>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="final-price">
+          قیمت نهایی :
+
+          <span id="totalPrice">5,000</span>
+
+          تومان
+        </div>
+      </div>
+
+      <div class="features">
+        <h2>ویژگی سرویس اکستراپینگ</h2>
+
+        <ul>
+          <li>
+            قیمت گذاری در اگزا پینگ به صورت pay as you go بوده و شما فقط تا وقتی
+            از سرویس استفاده کنید, هزینه پرداخت کنید. اطلاعات بیشتر در مورد قیمت
+            گذاری ...
+          </li>
+
+          <li>
+            قیمت سرویس در حال حاظر به ازای هر روز 1000 و به ازای هر گیگابایت
+            4000 تومان میباشد. برای محاسبه قیمت از ابزار محاسبه قیمت سرویس
+            استفاده کنید.
+          </li>
+
+          <li>لوکیشن سرویس اروپا ( معمولا آلمان یا فرانسه ) میباشد.</li>
+
+          <li>تعداد کاربر سرویس کاملا بدون محدودیت می باشد.</li>
+
+          <li>قابل اجرا برروی سیستم عامل های اندروید , ایفون , ویندوز</li>
+        </ul>
+      </div>
+    </section>
+    <!-- end price -->
+    <!-- start training  -->
+    <section class="training">
+      <h2 class="training-title">آموزش استفاده از اگزاپینگ</h2>
+
+      <div class="training-line"></div>
+
+      <div class="training-boxes">
+        <div class="training-box">
+          <h3>آموزش استفاده در اندروید</h3>
+        </div>
+
+        <div class="training-box">
+          <h3>آموزش استفاده در آیفون</h3>
+        </div>
+
+        <div class="training-box">
+          <h3>آموزش استفاده در ویندوز</h3>
+        </div>
+      </div>
+    </section>
+    <!-- end training  -->
+    <!-- start footer -->
+    <footer class="footer">
+      <div class="footer-wave">
+        <svg viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,80 C250,170 450,180 700,120 C980,50 1180,20 1440,90 L1440,0 L0,0 Z"
+          ></path>
+        </svg>
+
+        <svg class="wave2" viewBox="0 0 1440 220" preserveAspectRatio="none">
+          <path
+            d="M0,120 C300,170 520,110 760,130 C1000,150 1200,70 1440,140 L1440,0 L0,0 Z"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="footer-content">
+        <div class="footer-column trust">
+          <h3>نماد اعتماد</h3>
+
+          <a href="#">
+            <img src="images/enamad.png" alt="enamad" />
+          </a>
+        </div>
+
+        <div class="footer-column links">
+          <ul>
+            <li>
+              <a href="#">قوانین</a>
+            </li>
+
+            <li>
+              <a href="#">شرایط</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column social">
+          <ul>
+            <li>
+              <a href="#">راه های ارتباطی</a>
+            </li>
+
+            <li>
+              <a href="#">کانال تلگرام</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column brand">
+          <div class="brand-wrapper">
+            <div class="brand-title">
+              <span>اکسترا</span>
+
+              <span>پینگ</span>
+            </div>
+
+            <img src="images/logo-footer.png" alt="Exaping" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p>کلیه حقوق مادی و معنوی این وب سایت برای اکستراپینگ محفوظ است</p>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@15.8.1/dist/nouislider.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
